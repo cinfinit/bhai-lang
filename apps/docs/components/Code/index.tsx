@@ -7,25 +7,24 @@ import { sendEvents } from "../../helpers";
 import CodeEditor from "./CodeEditor";
 import Terminal from "./Terminal";
 
-
 const initialCode = `
-hi bhai
- bol bhai "Hello World";
+zara saral tareeke se samjhaiye
+ bol bol acha lag rha hai "Hello World";
  
-  bhai ye hai a = 3;
-  bhai ye hai b = 0;
+  hum bhi bna lenge a = 3;
+  hum bhi bna lenge b = 0;
 
-  jab tak bhai (b < 5) {
-    bol bhai b;
+  ye meri expertise nhi hai (b < 5) {
+    bol bol acha lag rha hai b;
 
-    agar bhai (b == a){
-      bol bhai "b is equal to a";
+    bhai tu kya kar rha hai (b == a){
+      bol bol acha lag rha hai "b is equal to a";
     }
 
     b += 1;
   }
 
-bye bhai
+i am out
 `;
 
 const Code = (props: Props) => {
@@ -59,7 +58,7 @@ const Code = (props: Props) => {
       }
     }
 
-    sendEvents("CodeExecuted", {success: isExecusionSuccess});
+    sendEvents("CodeExecuted", { success: isExecusionSuccess });
 
     setIsSuccess(isExecusionSuccess);
     setOutput(outputList);

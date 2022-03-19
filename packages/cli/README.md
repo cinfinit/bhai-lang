@@ -27,9 +27,9 @@ npm i -g bhailang
 You can also try out your code on <a href="https://bhailang.js.org/#playground">Bhai Lang PlayGround</a></h4>
 
 ```
-hi bhai
-  bol bhai "Hello bhai";
-bye bhai
+zara saral tareeke se samjhaiye
+  bol bol acha lag rha hai "Hello bhai";
+i am out
 
 ```
 
@@ -50,32 +50,32 @@ hello bhai
 <h2 align="center">Documentation</h2>
 
 <h3 align="center">General</h3>
-<p align="center"><code>hi bhai</code> is the entrypoint for the program and all program must end with <code>bye bhai</code>. Anything outside of it will be ignored.</p>
+<p align="center"><code>zara saral tareeke se samjhaiye</code> is the entrypoint for the program and all program must end with <code>i am out</code>. Anything outside of it will be ignored.</p>
 
 ```
 
 This will be ignored
 
-hi bhai
+zara saral tareeke se samjhaiye
 // Write code here
-bye bhai
+i am out
 
 This too
 ```
 
 <h3 align="center">Variables</h3>
-<p align="center">Variables can be declared using <code>bhai ye hai</code>.</p>
+<p align="center">Variables can be declared using <code>hum bhi bna lenge</code>.</p>
 
 ```
 
-hi bhai
-  bhai ye hai a = 10;
-  bhai ye hai b = "two";
-  bhai ye hai c = 15;
+zara saral tareeke se samjhaiye
+  hum bhi bna lenge a = 10;
+  hum bhi bna lenge b = "two";
+  hum bhi bna lenge c = 15;
   a = a + 1;
   b = 21;
   c *= 2;
-bye bhai
+i am out
 ```
 
 <h3 align="center">Types</h3>
@@ -83,69 +83,69 @@ bye bhai
 
 ```
 
-hi bhai
-  bhai ye hai a = 10;
-  bhai ye hai b = 10 + (15*20);
-  bhai ye hai c = "two";
-  bhai ye hai d = 'ok';
-  bhai ye hai e = nalla;
-  bhai ye hai f = sahi;
-  bhai ye hai g = galat;
-bye bhai
+zara saral tareeke se samjhaiye
+  hum bhi bna lenge a = 10;
+  hum bhi bna lenge b = 10 + (15*20);
+  hum bhi bna lenge c = "two";
+  hum bhi bna lenge d = 'ok';
+  hum bhi bna lenge e = nalla;
+  hum bhi bna lenge f = sahi;
+  hum bhi bna lenge g = galat;
+i am out
 ```
 
 <h3 align="center">Built-ins</h3>
-<p align="center">Use <code>bol bhai</code> to print anything to console.</p>
+<p align="center">Use <code>bol bol acha lag rha hai</code> to print anything to console.</p>
 
 ```
 
-hi bhai
-  bol bhai "Hello World";
-  bhai ye hai a = 10;
+zara saral tareeke se samjhaiye
+  bol bol acha lag rha hai "Hello World";
+  hum bhi bna lenge a = 10;
   {
-    bhai ye hai b = 20;
-    bol bhai a + b;
+    hum bhi bna lenge b = 20;
+    bol bol acha lag rha hai a + b;
   }
-  bol bhai 5, 'ok', nalla , sahi , galat;
-bye bhai
+  bol bol acha lag rha hai 5, 'ok', nalla , sahi , galat;
+i am out
 ```
 
 <h3 align="center">Conditionals</h3>
-<p align="center">Bhailang supports simple if else construct , <code>agar bhai</code> block will execute if condition is <code>sahi</code> and <code>warna bhai</code> block will execute if condition is <code>galat</code>.</p>
+<p align="center">Bhailang supports simple if else construct , <code>bhai tu kya kar rha hai</code> block will execute if condition is <code>sahi</code> and <code>haan mai de dunga tu tension mt le</code> block will execute if condition is <code>galat</code>.</p>
 
 ```
 
-hi bhai
-  bhai ye hai a = 10;
-  agar bhai (a < 25) {
-   bol bhai "a is less than 25";
-  } warna bhai {
-   bol bhai "a is greater than or equal to 25";
+zara saral tareeke se samjhaiye
+  hum bhi bna lenge a = 10;
+  bhai tu kya kar rha hai (a < 25) {
+   bol bol acha lag rha hai "a is less than 25";
+  } haan mai de dunga tu tension mt le {
+   bol bol acha lag rha hai "a is greater than or equal to 25";
   }
-bye bhai
+i am out
 ```
 
 <h3 align="center">Loops</h3>
-<p align="center">Statements inside <code>jab tak bhai</code> blocks are executed as long as a specified condition evaluates to sahi. If the condition becomes <code>galat</code>, statement within the loop stops executing and control passes to the statement following the loop. Use <code>bas kar bhai</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.</p>
+<p align="center">Statements inside <code>ye meri expertise nhi hai</code> blocks are executed as long as a specified condition evaluates to sahi. If the condition becomes <code>galat</code>, statement within the loop stops executing and control passes to the statement following the loop. Use <code>bas kar bhai</code> to break the loop and <code className="language-cpp">agla dekh bhai</code> to continue within loop.</p>
 
 
 ```
 
-hi bhai
-  bhai ye hai a = 0;
-  jab tak bhai (a < 10) {
+zara saral tareeke se samjhaiye
+  hum bhi bna lenge a = 0;
+  ye meri expertise nhi hai (a < 10) {
    a += 1;
-   agar bhai (a == 5) {
-    bol bhai "andar se bol bhai ", a;
+   bhai tu kya kar rha hai (a == 5) {
+    bol bol acha lag rha hai "andar se bol bol acha lag rha hai ", a;
     agla dekh bhai;
    }
-   agar bhai (a == 6) {
+   bhai tu kya kar rha hai (a == 6) {
     bas kar bhai;
    }
-   bol bhai a;
+   bol bol acha lag rha hai a;
   }
-  bol bhai "done";
-bye bhai
+  bol bol acha lag rha hai "done";
+i am out
 ```
 
 

@@ -1,6 +1,5 @@
 import BhaiLangLogo from "./bhaiLangLogo";
 
-
 export default function Header() {
   return (
     <div className="relative overflow-hidden header flex justify-center items-center">
@@ -10,14 +9,23 @@ export default function Header() {
             <div className="sm:text-center lg:text-left">
               <h1 className="hidden">BhaiLang</h1>
               <div className="p-4">
-                <BhaiLangLogo />
+                <h1
+                  style={{
+                    color: "rgb(255 87 51)",
+                    fontSize: "70px",
+                    fontFamily: "Courier New",
+                  }}
+                >
+                  Shark Lang ;)
+                </h1>
+                {/* <BhaiLangLogo /> */}
               </div>
               <p className="mt-3 text-center text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 A toy programming language written in Typescript
               </p>
               <div className="prose text-center pt-4 pb-4">
                 {" "}
-                <code className="language-js">npm i -g bhailang</code>
+                {/* <code className="language-js">npm i -g bhailang</code> */}
               </div>
               <div className="mt-5 sm:mt-8 sm:flex justify-center">
                 <div className="rounded-md shadow">
@@ -28,7 +36,7 @@ export default function Header() {
                     Playground
                   </a>
                 </div>
-                <div className="mt-3 sm:mt-0 sm:ml-3">
+                {/* <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -37,10 +45,18 @@ export default function Header() {
                   >
                     View Source
                   </a>
-                </div>
+                </div> */}
               </div>
               <div className="text-center text-gray-300 pt-6">
-                Made by
+                Edited By
+                <a
+                  href="https://github.com/cinfinit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="text-bhagwa-700"> @cinfinit </span>
+                </a>
+                Thanks
                 <a
                   href="https://github.com/aniketsingh0104"
                   target="_blank"
@@ -56,6 +72,7 @@ export default function Header() {
                 >
                   <span className="text-bhagwa-700"> @ristri</span>
                 </a>
+                &nbsp; for this
               </div>
             </div>
           </main>

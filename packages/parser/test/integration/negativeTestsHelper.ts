@@ -1,35 +1,35 @@
 export const NegativeStatementTests = [
   // init statement tests
   {
-    name: "only hi bhai, should throw an exception",
+    name: "only zara saral tareeke se samjhaiye, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
       `,
     output: SyntaxError,
   },
   {
-    name: "only bye bhai, should throw an exception",
+    name: "only i am out, should throw an exception",
     input: `
-        bye bhai
+        i am out
       `,
     output: SyntaxError,
   },
   {
-    name: "multiple hi bhai, should throw an exception",
+    name: "multiple zara saral tareeke se samjhaiye, should throw an exception",
     input: `
-        hi bhai
-        hi bhai
-        bye bhai
+        zara saral tareeke se samjhaiye
+        zara saral tareeke se samjhaiye
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "multiple init, should throw an exception",
     input: `
-        hi bhai
-        hi bhai
-        bye bhai
-        bye bhai
+        zara saral tareeke se samjhaiye
+        zara saral tareeke se samjhaiye
+        i am out
+        i am out
       `,
     output: SyntaxError,
   },
@@ -37,25 +37,25 @@ export const NegativeStatementTests = [
   {
     name: "only open curly, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
         {
-        bye bhai
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "only closed curly, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
         }
-        bye bhai
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "open curly and no other token, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
         {
       `,
     output: SyntaxError,
@@ -63,11 +63,11 @@ export const NegativeStatementTests = [
   {
     name: "missing semi colon after expression, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
         {
           naam = 4
         }
-        bye bhai
+        i am out
       `,
     output: SyntaxError,
   },
@@ -75,44 +75,44 @@ export const NegativeStatementTests = [
   {
     name: "empty print statement, should throw an exception",
     input: `
-        hi bhai
-        bol bhai ;
-        bye bhai
+        zara saral tareeke se samjhaiye
+        bol bol acha lag rha hai ;
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "print statement without semi colon, should throw an exception",
     input: `
-        hi bhai
-        bol bhai 478
-        bye bhai
+        zara saral tareeke se samjhaiye
+        bol bol acha lag rha hai 478
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "print statement with space separated values, should throw an exception",
     input: `
-        hi bhai
-        bol bhai sahi galat;
-        bye bhai
+        zara saral tareeke se samjhaiye
+        bol bol acha lag rha hai sahi galat;
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "print statement test with unknown thing printing, should throw an exception",
     input: `
-        hi bhai
-        bol bhai ~!*;
-        bye bhai
+        zara saral tareeke se samjhaiye
+        bol bol acha lag rha hai ~!*;
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "print statement test with no other token, should throw an exception",
     input: `
-        hi bhai
-        bol bhai a
+        zara saral tareeke se samjhaiye
+        bol bol acha lag rha hai a
       `,
     output: SyntaxError,
   },
@@ -120,51 +120,51 @@ export const NegativeStatementTests = [
   {
     name: "variable statement test with space separated variable declaration, should throw an exception",
     input: `
-        hi bhai
-        bhai ye hai a b c;
-        bye bhai
+        zara saral tareeke se samjhaiye
+        hum bhi bna lenge a b c;
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "variable statement test without semi colon, should throw an exception",
     input: `
-        hi bhai
-        bhai ye hai a 
-        bye bhai
+        zara saral tareeke se samjhaiye
+        hum bhi bna lenge a 
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "variable statement test with no identifier token, should throw an exception",
     input: `
-        hi bhai
-        bhai ye hai ;
-        bye bhai
+        zara saral tareeke se samjhaiye
+        hum bhi bna lenge ;
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "variable statement test with identifier expression and no other token, should throw an exception",
     input: `
-        hi bhai
-        bhai ye hai a, b
+        zara saral tareeke se samjhaiye
+        hum bhi bna lenge a, b
       `,
     output: SyntaxError,
   },
   {
     name: "variable statement test with assignment expression and no other token, should throw an exception",
     input: `
-        hi bhai
-        bhai ye hai a = 5
+        zara saral tareeke se samjhaiye
+        hum bhi bna lenge a = 5
       `,
     output: SyntaxError,
   },
   {
     name: "variable statement test with no other token, should throw an exception",
     input: `
-        hi bhai
-        bhai ye hai
+        zara saral tareeke se samjhaiye
+        hum bhi bna lenge
       `,
     output: SyntaxError,
   },
@@ -173,8 +173,8 @@ export const NegativeStatementTests = [
   {
     name: "variable statement test with no other token, should throw an exception",
     input: `
-    hi bhai
-    jab tak bhai (x > 9)
+    zara saral tareeke se samjhaiye
+    ye meri expertise nhi hai (x > 9)
       `,
     output: SyntaxError,
   },
@@ -185,43 +185,43 @@ export const NegativeExpressionsTests = [
   {
     name: "simple assignment expression test without semi colon, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
         a = 4
-        bye bhai
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "complex assignment expression test with unknown assignment, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
         a *=- 4;
-        bye bhai
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "assignment expression test with invalid left hand side, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
         "hello" = 4;
-        bye bhai
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "assignment expression test with invalid left hand side 2nd, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
         5 = 890;
-        bye bhai
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "assignment expression test with no other token, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
         a = 890
       `,
     output: SyntaxError,
@@ -230,7 +230,7 @@ export const NegativeExpressionsTests = [
   {
     name: "multiplicative expression test with no other token, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
         6 * 5 * 
       `,
     output: SyntaxError,
@@ -239,18 +239,18 @@ export const NegativeExpressionsTests = [
   {
     name: "paranthesized expression test with only open parenthesis, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
         (a + 4;
-        bye bhai
+        i am out
       `,
     output: SyntaxError,
   },
   {
     name: "paranthesized expression test with only close parenthesis, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
         a + 4);
-        bye bhai
+        i am out
       `,
     output: SyntaxError,
   },
@@ -258,7 +258,7 @@ export const NegativeExpressionsTests = [
   {
     name: "paranthesized expression test with only close parenthesis and no other token, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
         (
       `,
     output: SyntaxError,
@@ -266,9 +266,9 @@ export const NegativeExpressionsTests = [
   {
     name: "paranthesized expression test with one close parenthesis missing, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
         (a * (4 + 8 + 10);
-        bye bhai
+        i am out
       `,
     output: SyntaxError,
   },
@@ -276,27 +276,27 @@ export const NegativeExpressionsTests = [
   {
     name: "logical expression test with right operand missing, should throw an exception",
     input: `
-    hi bhai
-    bhai ye hai a = b && ;
-    bye bhai;
+    zara saral tareeke se samjhaiye
+    hum bhi bna lenge a = b && ;
+    i am out;
       `,
     output: SyntaxError,
   },
   {
     name: "logical expression test with left operand missing, should throw an exception",
     input: `
-    hi bhai
-    bhai ye hai a = && b;
-    bye bhai;
+    zara saral tareeke se samjhaiye
+    hum bhi bna lenge a = && b;
+    i am out;
       `,
     output: SyntaxError,
   },
   {
     name: "logical expression test with both operand missing, should throw an exception",
     input: `
-    hi bhai
-    agar bhai (&&);
-    bye bhai;
+    zara saral tareeke se samjhaiye
+    bhai tu kya kar rha hai (&&);
+    i am out;
       `,
     output: SyntaxError,
   },
@@ -306,30 +306,30 @@ export const IfStatementNagativeTests = [
   {
     name: "If statement test - nothing after if condition , should throw an exception",
     input: `
-        hi bhai
-        agar bhai (sahi)
+        zara saral tareeke se samjhaiye
+        bhai tu kya kar rha hai (sahi)
       `,
     output: SyntaxError,
   },
   {
     name: "If statement test - no if condition before else , should throw an exception",
     input: `
-        hi bhai
-        warna bhai {
+        zara saral tareeke se samjhaiye
+        haan mai de dunga tu tension mt le {
 
         }
-        bye bhai;
+        i am out;
       `,
     output: SyntaxError,
   },
   {
     name: "If statement test - if without a condition , should throw an exception",
     input: `
-        hi bhai
-       agar bhai {
+        zara saral tareeke se samjhaiye
+       bhai tu kya kar rha hai {
 
        }
-        bye bhai;
+        i am out;
       `,
     output: SyntaxError,
   },
@@ -339,10 +339,10 @@ export const ContinueStatementNegativeTests = [
   {
     name: "Continue statement test - continue outside a loop, should throw an exception",
     input: `
-        hi bhai
+        zara saral tareeke se samjhaiye
           agla dekh bhai
-        bye bhai
+        i am out
       `,
     output: SyntaxError,
   },
-]
+];

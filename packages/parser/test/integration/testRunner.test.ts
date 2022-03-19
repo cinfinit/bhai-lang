@@ -4,15 +4,14 @@ import bhaiLangModule from "../../src/module/bhaiLangModule";
 import {
   IfStatementNagativeTests,
   NegativeExpressionsTests,
-  NegativeStatementTests
+  NegativeStatementTests,
 } from "./negativeTestsHelper";
 import {
   ExpressionsTests,
   IfStatementTests,
   StatementTests,
-  WhileStatementTests
+  WhileStatementTests,
 } from "./positiveTestsHelper";
-
 
 type posTestObjType = typeof StatementTests[0];
 
@@ -68,8 +67,8 @@ function _runNegativeTests(testCase: negTestObjType) {
 // test("jest test", () => {
 //   const parser = bhaiLangModule.getParser();
 //   console.debug(JSON.stringify(parser.parse(`
-//   hi bhai
-//       bol bhai 9 == 90;
-//       bye bhai
+//   zara saral tareeke se samjhaiye
+//       bol bol acha lag rha hai 9 == 90;
+//       i am out
 //   `)));
 // })
