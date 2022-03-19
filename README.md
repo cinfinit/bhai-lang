@@ -13,11 +13,7 @@
 </p>
 <br>
 
-<h2 align="center">Installation</h2>
 
-```
-npm i -g bhailang
-```
 
 <h2 align="center">Usage</h2>
 
